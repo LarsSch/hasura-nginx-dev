@@ -43,6 +43,10 @@ items:
     - port: 80
       protocol: TCP
       targetPort: 8080
+    - name: ssh
+      port: 22
+      protocol: TCP
+      targetPort: 22
     selector:
       app: www
     type: ClusterIP
